@@ -1,0 +1,226 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>LNSP-CG</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="shortcut icon" href="images/republic-of-the-congo.svg" />
+  <link rel="stylesheet" href="cssmenu.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+  </script>
+
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+
+  <script LANGUAGE="JavaScript">
+    // Fonction executée lors de l'utilisation du clic droit.
+
+    function disableselect(e) {
+      return false
+    }
+
+    function reEnable() {
+      return true
+    }
+
+    //if IE4+ 
+    document.onselectstart = new Function("return false")
+    document.oncontextmenu = new Function("return false")
+    //if NS6 
+    if (window.sidebar) {
+      document.onmousedown = disableselect
+      document.onclick = reEnable
+    }
+  </script>
+
+  <style>
+    $blue: #0084ff;
+    $blue-darker: darken($blue, 5);
+
+    .troisvaleurs {
+      border: 0.3em 0 9px dotted orange;
+    }
+
+    body {
+      background: #20262E;
+      margin: auto;
+      padding: 10%;
+      font-family: Helvetica;
+
+      background:
+        linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+        linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+        linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+        linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+        linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+        linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+      background-color: #131313;
+      background-size: 20px 20px;
+    }
+
+    #banner-message {
+      background: #fff;
+      border-radius: 4px;
+      padding: 15px;
+      font-size: 25px;
+      text-align: center;
+      margin: auto;
+      transition: all 3s;
+      width: 300px;
+    }
+
+    #butt {
+      background: #0084ff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 14px;
+      font-size: 13px;
+      color: #fff;
+    }
+
+    /*#butt:hover {
+        
+          background: #f084ff;
+          color: #fff;
+          margin: 0px;
+          width: 310px;
+        }
+        #banner-message:hover {
+          transition: all 0.2s;
+          background: #E084ff;
+          color: #fff;
+          margin-top: 30px;
+          width: 320px;
+        }
+        
+        #butt:hover{
+          background: white;
+          color: green; 
+    }*/
+  </style>
+</head>
+
+
+<body style="text-align:center;" onMouseOver="window.status='Merci de respecter le contenu en ne pas le copier sans autorisation!'; return true;">
+
+
+  
+  <div role="button" class="btn btn-warning" href="#">
+
+    <div style="text-align: center; background-color: #fff;">
+      <div style="text-align: center; ">
+        <table border="0" style="text-align: center; ">
+          <tr>
+            <td style="text-align: right;">
+              <img src="https://lnsp-cg.org/images/drapo242.jpg" width="40" />
+            </td>
+            <td>
+              <span class="pays" style="text-align: left;text-align: center; ">
+                <b>REPUBLIQUE DU CONGO</b>
+                <div style="text-align: center; color: #000000; font-size:13px; border-bottom: thick double #26650E;">
+                  <span>
+                    Ministère de la Santé et de la Population
+
+                  </span>
+
+                </div>
+
+              </span>
+
+            </td>
+            <td style="text-align: right;">
+              <img src="https://lnsp-cg.org/images/armoirieRC.png" width="40" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan='3'>
+              <div style="font-weight: bold;">
+                Commission laboratoire & recherche
+              </div>
+            </td>
+          </tr>
+        </table>
+        <!-- <hr style="border:2px solid white" /> -->
+
+      </div>
+    </div>
+
+    <div style="font-size: 22px;text-align:center;font-weight: bold;">
+      CERTIFICAT TEST COVID
+    </div>
+    <div style="text-align:center; padding: auto; border-bottom:4px solid #e66465; color:#000; background-color: #74992e; font-weight: bold; ">
+      pour CONNAITRE SON STATUT.    </div>
+
+    <div id="banner-message" class="troisvaleurs">
+
+
+      <div style="margin: 10px; font-size: 17px;">
+        <span>
+                    Test PCR <strong>NEGATIF</strong> appartenant à : <br/>          <strong>EBOUREFE VIANEL DESTIN</strong> et est disponible depuis le           2021-08-30 A 18H19.<br/>Le prélèvement a été fait le 2021-08-30 A 12H04.        </span>
+
+      </div>
+      <hr>
+      <div>
+        <img src="./images/qrcode/O81LN647OF953O41.png" width="99" height="99" />      </div>
+      <div style="text-align:center; border-top:2px solid #e66465; color:#000; background-color: #74992e; font-weight: bold; ">
+        TEST ENCORE UTILISABLE.      </div>
+
+      <input type="submit" name="Submit" id="butt" value="-- Voir la copie du résultat --" onClick="openW();">
+
+      <footer class=" py-2 bg-dark">
+        <!--- fixed-bottom Laboratoire National de Santé Publique-->
+        <div style="height:2pt; background: #ffde00;"> </div>
+        <div>
+          <p class="m-0 text-center text-white fixed-down" style="font-size: 13px;
+                  background:
+                  linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+                  linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+                  linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+                  linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+                  linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+                  linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+                  background-color: #131313;
+                  background-size: 20px 20px;
+                  color: white;
+                  ">
+            Copyright &copy;2021, Laboratoire National de Santé Publique, Rép. Congo.          </p>
+        </div>
+
+      </footer>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Fonction executée lors de l'utilisation du clic droit.
+    $(document).bind("contextmenu", function() {
+      alert('Merci de respecter le contenu en ne pas le copier sans autorisation!');
+      return false;
+    });
+  </script>
+
+  <script>
+    var win;
+
+    function openW() {
+      win = window.open("https://lnsp-cg.org/ncov2/Bulletin.php?id=O81LN647OF953O41&scp=https://lnsp-cg.org/rload.php?q=O81LN647OF953O41", "width='1400', height='786'");
+    }
+  </script>
+
+</body>
+
+</html>
